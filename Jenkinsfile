@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'yarn build'
+                sh 'node -V'
+                sh 'node -v'
             }
         }
     }
