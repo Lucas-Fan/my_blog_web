@@ -5,7 +5,6 @@ pipeline {
             steps {
                 node('node') {
                   sh 'yarn'
-                  sh 'exit'
                 }
             }
         }
