@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                node('node') {
+                nodejs('node') {
+                  sh 'echo start bulid'
                   sh 'yarn'
                 }
             }
