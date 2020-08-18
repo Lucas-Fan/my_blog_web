@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                nodejs('nodejs') {
+                node('node') {
                   sh 'yarn'
                   sh 'exit'
                 }
