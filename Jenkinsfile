@@ -3,8 +3,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'node -V'
-                sh 'node -v'
+                sh 'docker exec -it node_blog /bin/bash'
+                sh 'cd /home/workspace'
+                sh 'yarn'
+                sh 'exit'
             }
         }
     }
