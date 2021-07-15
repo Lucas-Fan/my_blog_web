@@ -6,4 +6,4 @@ if (module && module.hot) {
   module.hot.accept();
 }
 
-ReactDOM.render(<App name='vortesnail' age={25} />, document.querySelector('#root'));
+ReactDOM.render(<App name='Lucas Fan' age={24} />, document.querySelector('#root'));

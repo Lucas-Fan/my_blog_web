@@ -12,7 +12,7 @@ function App(props: IProps) {
   return (
     <div className='app'>
       <Header />
-      <span>{`Hello! I'm ${name}, ${age} yearssss old.`}</span>
+      <span>{`Hello! I'm ${name}, ${age} yearssss old. This is my blog.`}</span>
     </div>
   );
 }
