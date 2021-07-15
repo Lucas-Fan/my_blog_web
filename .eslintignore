@@ -1,0 +1,7 @@
+/node_modules
+/build
+/dist
+
+!.babelrc.js
+!.commitlintrc.js
+!.stylelintrc.js
