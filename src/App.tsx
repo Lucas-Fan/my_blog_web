@@ -1,18 +1,28 @@
 import React from 'react';
 import Header from 'Components/Header';
+import { HashRouter, Redirect, Route } from 'react-router-dom';
+
+import Layout from 'Components/Layout';
+import About from './views/about';
+import Home from './views/home';
+import Blog from './views/blog';
+import Friend from './views/friend';
 import './App.scss';
+import './styles/common.scss';
 
-interface IProps {
-  name: string;
-  age: number;
-}
-
-function App(props: IProps) {
-  const { name, age } = props;
+function App() {
   return (
     <div className='app'>
-      <Header />
-      <span>{`Hello! I'm ${name}, ${age} years old. This is my blog.`}</span>
+      <HashRouter>
+        <Header />
+        <Layout>
+          <Route path='/home' component={Home} />
+          <Route path='/about' component={About} />
+          <Route path='/blog' component={Blog} />
+          <Route path='/friend' component={Friend} />
+          <Redirect to='/home' from='/' />
+        </Layout>
+      </HashRouter>
     </div>
   );
 }

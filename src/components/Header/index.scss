@@ -1,3 +1,17 @@
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   background: lightgreen;
+
+  ul {
+    display: flex;
+    margin: 0;
+
+    li {
+      display: block;
+      padding: 6px;
+      cursor: pointer;
+    }
+  }
 }

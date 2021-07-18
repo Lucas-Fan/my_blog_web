@@ -61,6 +61,8 @@ module.exports = {
     react: 'React',
     'react-dom': 'ReactDOM',
     axios: 'axios',
+    'react-router': 'ReactRouter',
+    'react-router-dom': 'ReactRouterDOM',
   },
   module: {
     rules: [
